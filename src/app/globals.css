@@ -1,26 +1,129 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #ede4cf;
+  --background-elevated: #e4d8bd;
+  --background-card: #f6efdc;
+  --foreground: #0a1f4d;
+  --foreground-muted: #4a5775;
+  --foreground-subtle: #8a92a8;
+  --border: #d4c8aa;
+  --border-strong: #b9a98a;
+
+  --accent: #b8902c;
+  --accent-strong: #9a7724;
+  --accent-soft: #f3e8c5;
+
+  --accent-navy: #0a1f4d;
+  --accent-navy-strong: #061536;
+  --accent-navy-soft: #d6def0;
+
+  --warning: #991b1b;
 }
 
 @theme inline {
   --color-background: var(--background);
+  --color-background-elevated: var(--background-elevated);
+  --color-background-card: var(--background-card);
   --color-foreground: var(--foreground);
+  --color-foreground-muted: var(--foreground-muted);
+  --color-foreground-subtle: var(--foreground-subtle);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-accent: var(--accent);
+  --color-accent-strong: var(--accent-strong);
+  --color-accent-soft: var(--accent-soft);
+  --color-accent-navy: var(--accent-navy);
+  --color-accent-navy-strong: var(--accent-navy-strong);
+  --color-accent-navy-soft: var(--accent-navy-soft);
+  --color-warning: var(--warning);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  font-feature-settings: "ss01", "cv11";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 {
+  letter-spacing: -0.025em;
+  font-weight: 500;
+}
+
+h1 {
+  letter-spacing: -0.04em;
+}
+
+::selection {
+  background: var(--accent-navy);
+  color: white;
+}
+
+.dot-grid {
+  background-image: radial-gradient(circle, var(--border-strong) 1px, transparent 1px);
+  background-size: 24px 24px;
+  mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 30%, transparent 75%);
+}
+
+/* Cinematic hero — fotbollsplan med strålkastare som släcks. Placeholder tills riktig video. */
+
+/* Strålkastarsken som pulserar och släcks */
+.lights-cycle {
+  animation: stadium-lights 14s ease-in-out infinite;
+}
+
+@keyframes stadium-lights {
+  0%, 55% {
+    opacity: 1;
+  }
+  68% {
+    opacity: 0.7;
+  }
+  78% {
+    opacity: 0.25;
+  }
+  86%, 92% {
+    opacity: 0.05;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Mörker som lägger sig över hela bannern när lamporna släcks */
+.lights-cycle-overlay {
+  background: radial-gradient(ellipse 100% 80% at 50% 50%, transparent 30%, rgba(0, 0, 0, 0.85) 100%);
+  opacity: 0;
+  animation: blackout 14s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes blackout {
+  0%, 60% {
+    opacity: 0;
+  }
+  78% {
+    opacity: 0.6;
+  }
+  86%, 92% {
+    opacity: 0.95;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lights-cycle,
+  .lights-cycle-overlay {
+    animation: none;
+  }
+  .lights-cycle-overlay {
+    display: none;
+  }
 }
