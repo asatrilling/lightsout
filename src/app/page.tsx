@@ -162,7 +162,7 @@ export default function Home() {
               <div className="mt-8 grid grid-cols-3 gap-px overflow-hidden rounded-2xl border border-border">
                 {[
                   ["50+", "år av liv efter karriär"],
-                  ["60%", "hamnar i kris utan plan"],
+                  ["1 av 3", "upplever psykisk ohälsa i karriären"],
                   ["10–15", "år är karriären"],
                 ].map(([fig, label]) => (
                   <div key={label} className="bg-background-card p-5">
@@ -396,7 +396,7 @@ export default function Home() {
                   ["Skydd mot dåliga råd", "Vi granskar förslag från agenter, släkt och vänner innan du säger ja"],
                   ["Specifik utbildning", "Anpassad för unga: första kontraktet, utlandsflytt, agentförhandling"],
                   ["Mental coaching", "Idrottspsykolog för identitet, press och övergångar"],
-                  ["Tillgång till hela panelen", "Skatte-, juridik- och försäkringspartners när det behövs"],
+                  ["Tillgång till vårt växande nätverk", "Skatte-, juridik- och försäkringspartners när det behövs"],
                 ].map(([title, body]) => (
                   <li key={title} className="flex gap-4">
                     <span className="mt-1.5 inline-block h-1 w-1 flex-shrink-0 rounded-full bg-accent" />
@@ -495,7 +495,7 @@ const PILLARS = [
   {
     Icon: Icon.Coins,
     title: "Ekonomi",
-    body: "Karriärens pengar ska räcka livet ut. Översikt, plan och vägval — placering, skatt och juridik via vår oberoende panel.",
+    body: "Karriärens pengar ska räcka livet ut. Översikt, plan och vägval — placering, skatt och juridik via oberoende specialister vi kopplar in.",
     href: "/ben/ekonomi",
   },
   {
