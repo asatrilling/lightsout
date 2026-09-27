@@ -21,7 +21,7 @@ const FOOTER_NAV = [
       { label: "Bas", href: "/vad-du-far/bas" },
       { label: "Aktiv", href: "/vad-du-far/aktiv" },
       { label: "Elit", href: "/vad-du-far/elit" },
-      { label: "Vår panel", href: "/panel" },
+      { label: "Vårt nätverk", href: "/panel" },
     ],
   },
   {
@@ -79,7 +79,7 @@ export function Footer() {
         <div className="mt-16 flex flex-col gap-4 border-t border-border/60 pt-8 text-xs text-foreground-subtle sm:flex-row sm:items-center sm:justify-between">
           <p>© {new Date().getFullYear()} Lightsout. Alla rättigheter förbehållna.</p>
           <p className="max-w-xl text-right">
-            Lightsout är inte ett värdepappersbolag. All konkret rådgivning utförs av licensierade partners i vår panel.
+            Lightsout är inte ett värdepappersbolag och lämnar inga individuella rekommendationer. All konkret rådgivning utförs av licensierade specialister.
           </p>
         </div>
       </Container>
