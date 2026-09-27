@@ -194,7 +194,7 @@ export default function OmOssPage() {
               <span className="text-accent text-5xl sm:text-6xl md:text-7xl">&ldquo;</span>
               <br className="hidden sm:block" />
               <span className="block sm:inline">Om fem år är </span>
-              <span className="italic">&ldquo;broke athlete&rdquo;</span>-rubrikerna ett minne från innan Lightsout fanns.
+              övergången från idrottskarriären inte längre en ensam resa.
               <br />
               <span className="text-accent text-5xl sm:text-6xl md:text-7xl">&rdquo;</span>
             </p>
@@ -210,8 +210,8 @@ export default function OmOssPage() {
         <div className="dot-grid absolute inset-0 opacity-60" />
         <Container className="relative py-28 sm:py-36">
           <div className="mx-auto max-w-4xl text-center">
-            <p className="font-mono text-xs uppercase tracking-widest text-warning">
-              Skillnaden är brutal
+            <p className="font-mono text-xs uppercase tracking-widest text-foreground-subtle">
+              Nästa steg
             </p>
             <h2
               className="mt-4 text-balance text-4xl font-semibold leading-tight tracking-tight text-accent sm:text-5xl md:text-6xl"
@@ -220,9 +220,9 @@ export default function OmOssPage() {
               Skapa trygghet för din framtid.
             </h2>
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-foreground sm:text-xl">
-              60 % av f.d. proffsidrottare hamnar i ekonomisk kris.
+              Övergången är en av de största i en idrottares liv.
               <br />
-              <span className="text-foreground-muted">Vi ser till att du blir en av de andra. Det börjar med ett samtal.</span>
+              <span className="text-foreground-muted">Du behöver inte göra den ensam. Det börjar med ett samtal.</span>
             </p>
             <Link
               href="/boka-samtal"
