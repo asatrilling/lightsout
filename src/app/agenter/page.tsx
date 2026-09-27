@@ -25,7 +25,7 @@ export default function AgenterPage() {
               <span className="text-accent-navy">Vi ser till att ni kan bära det hela vägen.</span>
             </h1>
             <p className="mt-8 max-w-2xl text-lg leading-relaxed text-foreground-muted sm:text-xl">
-              Ni signerar kontrakt, planerar transfers, förhandlar villkor. Men ansvaret för era spelare slutar inte vid slutsignalen. Lightsout är specialisten som hjälper er att leverera helheten — mentalt, ekonomiskt och genom transitionen efter karriären.
+              Ni signerar kontrakt, planerar transfers, förhandlar villkor. Men ansvaret för era spelare slutar inte vid slutsignalen. Lightsout är specialisten som hjälper er att hålla ihop helheten — mentalt, ekonomiskt och genom transitionen efter karriären.
             </p>
             <div className="mt-10 flex flex-col gap-3 sm:flex-row">
               <Link
@@ -108,7 +108,7 @@ export default function AgenterPage() {
               Vad vi gör för era spelare
             </p>
             <h2 className="mt-4 text-balance text-4xl font-semibold leading-tight tracking-tight sm:text-5xl">
-              Vi levererar helheten åt era spelare.
+              Vi håller ihop helheten åt era spelare.
             </h2>
           </div>
 
@@ -333,7 +333,7 @@ const COVERAGE = [
   {
     we: "Ekonomi & internationell skatt",
     weBody:
-      "Specialister på NHL-, Premier League- och La Liga-skatt. Bildrättigheter och pension.",
+      "Vi bygger ett nätverk av skattespecialister med erfarenhet av utländska proffsligor, bildrättigheter och pension.",
     theyAvoid:
       "Era spelare får djup skattekompetens i varje land där de spelar — utan att ni bygger global expertis själva.",
   },
@@ -444,7 +444,7 @@ const FAQ = [
   },
   {
     q: "Är Lightsout reglerat av Finansinspektionen?",
-    a: "Nej, vi är inte ett värdepappersbolag eller en försäkringsförmedlare. Vi är en koncierge-tjänst som hänvisar till licensierade specialister i vår panel. All konkret rådgivning utförs av dessa reglerade partners.",
+    a: "Nej. Vi kartlägger vilka frågor som finns, hjälper spelaren prioritera och samordnar kontakten med licensierade specialister där reglerad rådgivning krävs. Vi säljer inga finansiella produkter och lämnar inga individuella rekommendationer om placeringar, försäkringar, skatt eller juridik. Sådan rådgivning ges av rätt licensierad part.",
   },
   {
     q: "Hur många spelare har ni idag?",
